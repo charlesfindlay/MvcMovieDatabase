@@ -13,5 +13,11 @@ namespace MvcMovieDatabase.Controllers
         {
             return "This is my <strong>default</strong> action...";
         }
+
+        // GET: Helloworld/welcome
+        public string Welcome()
+        {
+            return "This is the Welcome action method...";
+        }
     }
 }
