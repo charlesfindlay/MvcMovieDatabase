@@ -9,7 +9,7 @@ using Xunit;
 
 namespace MyTestProject
 {
-    public class Class1
+    public class TestFile
     {
         [Fact]
         public void SomeTest()
