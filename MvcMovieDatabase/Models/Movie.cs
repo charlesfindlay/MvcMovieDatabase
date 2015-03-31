@@ -3,7 +3,7 @@ using System.Data.Entity;
 
 namespace MvcMovieDatabase.Models
 {
-    public class Movie
+    public class Movie  // This class movie maps to a table named movie in the database
     {
         public int ID { get; set; }
         public string Title { get; set; }
@@ -14,7 +14,7 @@ namespace MvcMovieDatabase.Models
 
     public class MovieDBContext : DbContext
     {
-        public DbSet<Movie> Movies { get; set; }
+        public DbSet<Movie> Movies { get; set; } // Generic DbSet contains movie
     }
 
 }
