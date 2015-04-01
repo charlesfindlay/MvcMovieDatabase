@@ -16,7 +16,7 @@ namespace MvcMovieDatabase.Controllers
 
         // GET: Movies
         public ActionResult Index(string searchString)
-        {
+        {            
             var movies = from m in db.Movies
                          select m;
 
