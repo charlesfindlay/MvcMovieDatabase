@@ -18,7 +18,7 @@ namespace MvcMovieDatabase.Controllers
         public ActionResult Index(string movieGenre, string searchString)
         {
             var GenreLst = new List<string>();
-
+            
             var GenreQry = from d in db.Movies
                            orderby d.Genre
                            select d.Genre;
@@ -31,7 +31,13 @@ namespace MvcMovieDatabase.Controllers
 
             if (!String.IsNullOrEmpty(searchString))
             {
-                movies = movies.Where(s => s.Title.Contains(searchString));
+                var splitSearchString = new List<string>();
+                splitSearchString = searchString.Split(' ').ToList();
+                foreach (var item in splitSearchString)
+                {
+                    movies = movies.Where(s => s.Title.Contains(item));
+                }
+                
             }
             if (!string.IsNullOrEmpty(movieGenre))
             {
