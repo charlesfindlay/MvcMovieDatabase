@@ -31,8 +31,7 @@ namespace MvcMovieDatabase.Controllers
 
             if (!String.IsNullOrEmpty(searchString))
             {
-                var splitSearchString = new List<string>();
-                splitSearchString = searchString.Split(' ').ToList();
+                var splitSearchString = searchString.Split(' ');
                 foreach (var item in splitSearchString)
                 {
                     movies = movies.Where(s => s.Title.Contains(item));
