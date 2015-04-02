@@ -22,6 +22,7 @@ namespace MvcMovieDatabase.Migrations
                     Title = "Ghostbusters",
                     ReleaseDate = DateTime.Parse("1984-3-13"),
                     Genre = "Comedy",
+                    Rating = "PG",
                     Price = 8.99M
                 },
 
@@ -30,6 +31,7 @@ namespace MvcMovieDatabase.Migrations
                     Title = "Ghostbusters 2",
                     ReleaseDate = DateTime.Parse("1986-2-23"),
                     Genre = "Comedy",
+                    Rating = "PG",
                     Price = 8.99M
                 },
 
@@ -38,6 +40,7 @@ namespace MvcMovieDatabase.Migrations
                     Title = "Harry Potter and the Sorcerer's Stone",
                     ReleaseDate = DateTime.Parse("2001-11-16"),
                     Genre = "Science Fiction & Fantasy",
+                    Rating = "PG",
                     Price = 8.99M
                 },
 
@@ -46,6 +49,7 @@ namespace MvcMovieDatabase.Migrations
                     Title = "Harry Potter and the Half-Blood Prince",
                     ReleaseDate = DateTime.Parse("2009-07-15"),
                     Genre = "Science Fiction & Fantasy",
+                    Rating = "PG-13",
                     Price = 12.99M
                 },
 
@@ -54,6 +58,7 @@ namespace MvcMovieDatabase.Migrations
                     Title = "The Avengers",
                     ReleaseDate = DateTime.Parse("2012-05-04"),
                     Genre = "Action & Adventure",
+                    Rating = "PG-13",
                     Price = 8.99M
                 },
 
@@ -62,6 +67,7 @@ namespace MvcMovieDatabase.Migrations
                     Title = "Birdman",
                     ReleaseDate = DateTime.Parse("2014-10-17"),
                     Genre = "Comedy",
+                    Rating = "PG-13",
                     Price = 14.99M
                 },
 
@@ -70,6 +76,7 @@ namespace MvcMovieDatabase.Migrations
                     Title = "The Theory of Everything",
                     ReleaseDate = DateTime.Parse("2014-11-07"),
                     Genre = "Drama",
+                    Rating = "PG-13",
                     Price = 14.99M
                 }
                 );  // End of Seed
